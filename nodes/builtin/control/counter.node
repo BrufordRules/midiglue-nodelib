@@ -18,6 +18,12 @@ parameter Threshold = 15 : Threshold value
 <Code>
 static Int count = ${Count};
 static Int thresh = ${Threshold};
+if (@in1){
+    count = in1;
+}
+if (@in2){
+    thresh = in2;
+}
 if (@in0){
     count += 1;
     if (thresh < count){
